@@ -32,7 +32,6 @@ html, body{
     background-color: rgb(247, 226, 188)    
 }
 
-
 .imagem{
     position: relative;
     height: 100vh;
@@ -77,6 +76,7 @@ header > p:hover{
     transition-duration: .4s;
     cursor: pointer;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.781);
+    border-radius: 5px 5px 10px 5px;
 }
 
 nav#menu{
