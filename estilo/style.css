@@ -149,6 +149,11 @@ section p{
     padding-bottom: 30px;
 }
 
+#img1:hover, #img2:hover{
+    opacity: 0.9;
+    transition-duration: .2s;
+}
+
 .link{
     text-decoration: none;
     color: white;
