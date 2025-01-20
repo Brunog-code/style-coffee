@@ -214,7 +214,7 @@ footer a::after{
     content: '\00A0\1F517';
 }
 
-#teste{
+#bk-arrow{
     cursor: pointer;
     position: fixed;
     bottom: 20px;
@@ -223,6 +223,7 @@ footer a::after{
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    opacity: .7;
 }
 
 .material-symbols-outlined{
@@ -233,4 +234,13 @@ footer a::after{
     right: 20px;
     z-index: 1000;
     color: white;
+    opacity: .7;
+}
+
+.material-symbols-outlined:hover{
+    opacity: 1;
+}
+
+#bk-arrow:hover{
+    opacity: .9;
 }
