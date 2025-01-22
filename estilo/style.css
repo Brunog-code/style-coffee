@@ -86,18 +86,26 @@ nav#menu{
     position: relative;
     left: 0.8%;
     top: 68%;
+    padding: 20px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    padding: 8px;
 }
 
 nav a{
-    letter-spacing: 0.4px;
     background-color: #8B5A2E;
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
-    margin-top: 50px;
     padding: 4px;
     border-radius: 3px;
     box-shadow: 2px 2px 5px #64493294;
+    transition: all .5s ease;
 }
 
 nav a:hover{
@@ -105,7 +113,6 @@ nav a:hover{
     background-color: var(--cor2);
     border-radius: 10px;
     box-shadow: 4px 4px 8px #33251a94;
-    transition-duration: .4s;
     font-weight: bold;
 }
 
