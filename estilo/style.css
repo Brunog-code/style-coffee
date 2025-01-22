@@ -248,3 +248,11 @@ footer a::after{
 #bk-arrow:hover{
     opacity: .9;
 }
+
+
+/*AJUSTES PARA TELA PEQUENA*/
+@media screen and (max-width: 600px){
+    .imagem{
+        background-position: left;
+    }
+}
