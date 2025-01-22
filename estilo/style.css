@@ -219,6 +219,7 @@ footer a::after{
     content: '\00A0\1F517';
 }
 
+/*BOTAO ROLAGEM*/
 #bk-arrow{
     display: none;
     cursor: pointer;
@@ -253,7 +254,6 @@ footer a::after{
 }
 
 /*ANIMAÇÃO IMAGEM*/
-
 [data-anima]{
     opacity: 0;
     transition: .8s;
@@ -275,6 +275,63 @@ footer a::after{
     opacity: 1;
     transform: translate3d(0,0,0);
 }
+
+/*jANELA IMAGEM*/
+.janelaImagens{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 100px;
+    z-index: 9999999;
+    background-color:  rgba(0,0,0,0.9);
+}
+
+.mostraJanela{
+    display: block;
+}
+
+.escondeJanela{
+    display: none;
+}
+
+.fecharJanela{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: var(--fonte-destaque);
+    cursor: pointer;
+}
+
+.fecharJanela:hover{
+    scale: 1.05;
+}
+
+.imgJanela{
+    margin: auto;
+    display: block;
+    width: 22%;
+    max-width: 800px;
+}
+
+.txtImg{
+    margin: auto;
+    display: block;
+    font-size: 1.2em;
+    font-weight: normal;
+    width: 70%;
+    max-width: 600px;
+    text-align: center;
+    color: white;
+    padding: 15px 0px;
+    height: 130px;
+}
+
 
 
 /*AJUSTES PARA TELA PEQUENA*/

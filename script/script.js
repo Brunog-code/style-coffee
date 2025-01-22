@@ -1,7 +1,7 @@
 //Funcao para verificar altura da pagina
 function buttomTop(){
-    const arrow = document.getElementById('arrow')
-    const bkArrow = document.getElementById('bk-arrow')
+    const arrow = document.getElementById('arrow');
+    const bkArrow = document.getElementById('bk-arrow');
 
     const scrollPosition = window.scrollY;
     const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -45,4 +45,26 @@ if (elementos.length){
         animaScroll();
     })
 }
+
+//JANELA IMGS
+function janelaIMGs(img, altTxt){
+    const janelaImagens = document.getElementById('janelaImagens');
+    const btnFecharJanela = document.getElementById('btnFecharJanela');
+    const imgJanela = document.getElementById('imgJanela');
+    const txtImg = document.getElementById('txtImg');
+
+    janelaImagens.classList.remove('escondeJanela'); //remove a classe que esconde a janela
+    janelaImagens.classList.add('mostraJanela'); //add a classe que mostra a janela
+
+    imgJanela.src = img; //adiciona a imagem passada no parametro para a janela
+    txtImg.innerHTML = altTxt; //adiciona o texto passado no parametro para a janela
+
+    btnFecharJanela.onclick = function(){
+        janelaImagens.classList.add('escondeJanela'); 
+        janelaImagens.classList.remove('mostraJanela');
+    }
+}
+
+
+
 
