@@ -85,7 +85,7 @@ nav#menu{
     top: 70%;
 }
 
-nav > a{
+nav a{
     letter-spacing: 0.4px;
     background-color: #8B5A2E;
     color: #ffffff;
@@ -97,7 +97,7 @@ nav > a{
     box-shadow: 2px 2px 5px #64493294;
 }
 
-nav > a:hover{
+nav a:hover{
     color:#443222;
     background-color: var(--cor2);
     border-radius: 10px;
@@ -215,6 +215,7 @@ footer a::after{
 }
 
 #bk-arrow{
+    display: none;
     cursor: pointer;
     position: fixed;
     bottom: 20px;
@@ -226,7 +227,8 @@ footer a::after{
     opacity: .7;
 }
 
-.material-symbols-outlined{
+#arrow{
+    display: none;
     cursor: pointer;
     font-size: 50px !important;
     position: fixed;
@@ -237,7 +239,7 @@ footer a::after{
     opacity: .7;
 }
 
-.material-symbols-outlined:hover{
+#arrow:hover{
     opacity: 1;
 }
 
