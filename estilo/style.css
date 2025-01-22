@@ -29,7 +29,8 @@ html, body{
     min-height: 100vh;
     font-family: var(--fonte-destaque);
     scroll-behavior: smooth;
-    background-color: rgb(247, 226, 188)    
+    background-color: rgb(247, 226, 188);
+    overflow-x: hidden;   
 }
 
 .imagem{
