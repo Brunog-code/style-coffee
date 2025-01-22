@@ -39,7 +39,8 @@ html, body{
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.7;
-    box-shadow: 3px 3px 5px #61473088 ;
+    box-shadow: 3px 3px 5px #61473088;
+    overflow-y: hidden;
 }
 
 header#topo{
