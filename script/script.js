@@ -48,10 +48,6 @@ if (elementos.length){
 
 //JANELA IMGS
 function janelaIMGs(img, altTxt){
-    //if (window.innerWidth <= 600){ //nao executa a funcao caso a tela seja pequena
-        //return;
-    //}
-
     const janelaImagens = document.getElementById('janelaImagens');
     const btnFecharJanela = document.getElementById('btnFecharJanela');
     const imgJanela = document.getElementById('imgJanela');
