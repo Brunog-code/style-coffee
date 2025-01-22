@@ -256,10 +256,4 @@ footer a::after{
     .imagem{
         background-position: left;
     }
-
-    nav#menu{
-        position: relative;
-        left: 0.8%;
-        top: 50%;
-    }
 }
