@@ -80,9 +80,9 @@ header > p:hover{
 }
 
 nav#menu{
-    position: absolute;
+    position: relative;
     left: 0.8%;
-    top: 70%;
+    top: 68%;
 }
 
 nav a{
