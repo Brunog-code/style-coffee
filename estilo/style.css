@@ -46,6 +46,7 @@ html, body{
 header#topo{
     background-image: url(../imgs/back01.jpg);
     background-position: center center;
+    overflow-x: hidden; 
 }
 
 #img1{
@@ -254,5 +255,9 @@ footer a::after{
 @media screen and (max-width: 600px){
     .imagem{
         background-position: left;
+    }
+
+    nav#menu{
+       margin-bottom: 7px;
     }
 }
