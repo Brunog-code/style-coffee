@@ -260,6 +260,6 @@ footer a::after{
     nav#menu{
         position: relative;
         left: 0.8%;
-        top: 64%;
+        top: 50%;
     }
 }
