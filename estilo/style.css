@@ -284,7 +284,7 @@ footer a::after{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    padding-top: 100px;
+    padding-top: 60px;
     z-index: 9999999;
     background-color:  rgba(0,0,0,0.9);
 }
@@ -313,10 +313,13 @@ footer a::after{
 }
 
 .imgJanela{
+    max-width: 75%;
+    max-height: 75%;
+    width: auto;
+    height: auto;
+    object-fit: contain; 
     margin: auto;
     display: block;
-    width: 22%;
-    max-width: 800px;
 }
 
 .txtImg{
