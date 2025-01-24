@@ -31,7 +31,7 @@
     <section class="normal" id="quemsomos">
         <h1>Quem somos?</h1>
         <div class="conteudo">
-            <p>A <a href="#topo" class="link">Style Coffee</a> nasceu do desejo de transformar a experiência do café em algo único, moderno e cheio de estilo. Fundada em 2023, somos uma cafeteria jovem e descolada que combina paixão por café, criatividade e um ambiente acolhedor para todos os amantes da bebida. Aqui, acreditamos que o café vai além do simples ato de tomar uma xícara. Ele conecta pessoas, inspira conversas e cria momentos inesquecíveis. Por isso, escolhemos os melhores grãos, trabalhamos com torrefação artesanal e elaboramos cada receita com um toque especial para surpreender seu paladar.Nosso espaço foi pensado para quem busca uma vibe descontraída e autêntica. Seja para uma reunião de trabalho, um encontro entre amigos ou um momento de pausa na rotina, a <a href="#topo" class="link">Style Coffee</a> é o lugar perfeito para se sentir em casa e, ao mesmo tempo, conectado com o mundo. ☕.</p>
+            <p data-anima='esquerda' >A <a href="#topo" class="link">Style Coffee</a> nasceu do desejo de transformar a experiência do café em algo único, moderno e cheio de estilo. Fundada em 2023, somos uma cafeteria jovem e descolada que combina paixão por café, criatividade e um ambiente acolhedor para todos os amantes da bebida. Aqui, acreditamos que o café vai além do simples ato de tomar uma xícara. Ele conecta pessoas, inspira conversas e cria momentos inesquecíveis. Por isso, escolhemos os melhores grãos, trabalhamos com torrefação artesanal e elaboramos cada receita com um toque especial para surpreender seu paladar.Nosso espaço foi pensado para quem busca uma vibe descontraída e autêntica. Seja para uma reunião de trabalho, um encontro entre amigos ou um momento de pausa na rotina, a <a href="#topo" class="link">Style Coffee</a> é o lugar perfeito para se sentir em casa e, ao mesmo tempo, conectado com o mundo. ☕.</p>
         
             <img src="imgs/cafeteira-p.jpg" alt="cafeteira-de-graos" class="imgconteudo" data-anima='centro' onclick="janelaIMGs('imgs/cafeteira-M.jpg', 'Cafeteira de grãos')">
         </div>
@@ -39,12 +39,42 @@
     </section>
 
     <section class="imagem" id="img1">
-    </section>
+        <div id="containerTabs">
+            <h3>Alguns de nossos produtos</h3>
+            <nav class="tabs">
+                <button data-btnTabs onclick="openTab(event, 'empada')" id="first">Empada</button>
+                <button data-btnTabs onclick="openTab(event, 'cappuccino')">Cappuccino</button>
+                <button data-btnTabs onclick="openTab(event, 'bolo')">Bolo</button>
+            </nav>
+
+            <article class="conteudoTab" id="empada">
+                <span class="closeTab" onclick="this.parentElement.style.display = 'none'">X</span>
+                <h2>Titulo</h2>
+                <p>IMG</p>
+                <p>Exemplo de conteudo</p>
+            </article>
+
+            <article class="conteudoTab" id="cappuccino">
+                <span class="closeTab" onclick="this.parentElement.style.display = 'none'">X</span>
+                <h2>Titulo</h2>
+                <p>IMG</p>
+                <p>Exemplo de conteudo</p>
+            </article>
+
+            <article class="conteudoTab" id="bolo">
+                <span class="closeTab" onclick="this.parentElement.style.display = 'none'">X</span>
+                <h2>Titulo</h2>
+                <p>IMG</p>
+                <p>Exemplo de conteudo</p>
+            </article>
+
+        </div><!--Fim container tabs-->
+    </section><!--Fim img1-->
 
     <section class="normal" id="graos">
         <h1>Grãos selecionados</h1>
         <div class="conteudo">
-            <p>Na <a href="#topo" class="link">Style Coffee</a>, cada xícara de café conta uma história de cuidado e dedicação. Nossa seleção de grãos é um processo rigoroso que começa com os melhores produtores, escolhidos por sua tradição e compromisso com a qualidade. Trabalhamos diretamente com fazendas que cultivam grãos especiais em altitudes elevadas, onde o clima e o solo garantem características únicas de sabor e aroma.
+            <p  data-anima='direita' >Na <a href="#topo" class="link">Style Coffee</a>, cada xícara de café conta uma história de cuidado e dedicação. Nossa seleção de grãos é um processo rigoroso que começa com os melhores produtores, escolhidos por sua tradição e compromisso com a qualidade. Trabalhamos diretamente com fazendas que cultivam grãos especiais em altitudes elevadas, onde o clima e o solo garantem características únicas de sabor e aroma.
             Os grãos são colhidos manualmente no ponto ideal de maturação, garantindo que apenas os melhores sejam utilizados. Após a colheita, passam por um processo de torrefação artesanal, ajustado para realçar suas notas naturais e entregar um café equilibrado e marcante.</p>
                         
             <img src="imgs/graos-p.jpg" alt="graos-cafe" class="imgconteudo"   data-anima='centro' onclick="janelaIMGs('imgs/graos-M.jpg', 'Grãos de alta qualidade')">
@@ -53,6 +83,7 @@
     </section>
 
     <section class="imagem" id="img2">
+
     </section>
 
     <section class="normal" id="fotos">

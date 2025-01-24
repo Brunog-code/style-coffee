@@ -65,6 +65,11 @@ function janelaIMGs(img, altTxt){
     }
 }
 
+//TABS
+function openTab(event, nameTab){
+    
+}
+
 
 
 
