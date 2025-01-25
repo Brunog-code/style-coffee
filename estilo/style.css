@@ -363,6 +363,8 @@ footer a::after{
 }
 
 .tabs{
+    display: flex;
+    flex-flow: column wrap;
     overflow: hidden;
     border: 1px solid var(--cor3);
     background-color: var(--cor1);
@@ -370,7 +372,6 @@ footer a::after{
 }
 
 .tabs button{
-    margin-right: 125px;
     background-color: inherit;
     opacity: .9;
     float: left;
@@ -378,9 +379,9 @@ footer a::after{
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    transition: .4s;
     font-size: 17px;
     color: #fff; 
+    transition: .4s;
 }
 
 .tabs button:hover{
@@ -394,8 +395,10 @@ footer a::after{
 
 .conteudoTab{
     display: none;    /*Alterar esse display JS*/
+    justify-content: space-between;
+    flex-flow: row nowrap;
     background-color: white;
-    opacity: .7;
+    opacity: .9;
     height: 250px;
     padding: 5px 10px;
     border: 1px solid var(--cor1);
@@ -403,7 +406,12 @@ footer a::after{
 }
 
 .conteudoTab:hover{
-    opacity: .8;
+    opacity: 1;
+}
+
+.conteudoTab img{
+    cursor: pointer;
+    border: 2px solid var(--cor3);
 }
 
 .closeTab{
@@ -417,6 +425,12 @@ footer a::after{
     scale: 1.05;
 }
 
+.tituloProduto{
+    color: #423021;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
 
 
 
@@ -427,3 +441,10 @@ footer a::after{
         background-position: left;
     }
 }
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+
+
+}
+
+

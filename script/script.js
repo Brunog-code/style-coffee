@@ -67,8 +67,27 @@ function janelaIMGs(img, altTxt){
 
 //TABS
 function openTab(event, nameTab){
-    
+    //ocultar todas abas abertas
+    const conteudoTab = document.getElementsByClassName('conteudoTab');
+    for (var i=0;i < conteudoTab.length; i++){
+        conteudoTab[i].style.display = 'none';
+    }
+
+    //tirar todos atives dos botoes
+    const btnTab = document.querySelectorAll('[data-btnTabs');
+    for(var i = 0;i < btnTab.length; i++){
+        btnTab[i].classList.remove('ative');
+    }
+
+    //exibir o conteudo quando clicar no botao
+    document.getElementById(nameTab).style.display = 'flex';
+    event.currentTarget.classList.add('ative');
 }
+
+document.getElementById('first').click();
+
+
+
 
 
 
