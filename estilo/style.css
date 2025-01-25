@@ -415,7 +415,7 @@ footer a::after{
 }
 
 .closeTab{
-    float: right;
+    align-self: flex-start;
     cursor: pointer;
     font-size: 18px;
 }
