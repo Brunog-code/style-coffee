@@ -346,7 +346,7 @@ footer a::after{
 
 #containerTabs{
     margin: 15px 0px 10px 15px;
-    width: 50%;
+    width: 700px;
 }
 
 #containerTabs h3{
@@ -399,7 +399,6 @@ footer a::after{
     flex-flow: row nowrap;
     background-color: white;
     opacity: .9;
-    height: 250px;
     padding: 5px 10px;
     border: 1px solid var(--cor1);
     border-top: none;
@@ -440,10 +439,39 @@ footer a::after{
     .imagem{
         background-position: left;
     }
+
+    #containerTabs{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .conteudoTab{
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        font-size: 0.8em;
+    }
+
+    .conteudoTab img{
+        max-height: 194px;
+
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px){
+    #containerTabs{
+        width: 90%;
+    }
 
+    .conteudoTab{
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        font-size: 0.9em;
+    }
+
+    .conteudoTab img{
+        max-height: 194px;
+
+    }
 
 }
 

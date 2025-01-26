@@ -66,25 +66,34 @@ function janelaIMGs(img, altTxt){
 }
 
 //TABS
-function openTab(event, nameTab){
-    //ocultar todas abas abertas
+function openTab(event, nameTab) {
     const conteudoTab = document.getElementsByClassName('conteudoTab');
-    for (var i=0;i < conteudoTab.length; i++){
-        conteudoTab[i].style.display = 'none';
-    }
+    const btnTab = document.querySelectorAll('[data-btnTabs]');
 
-    //tirar todos atives dos botoes
-    const btnTab = document.querySelectorAll('[data-btnTabs');
-    for(var i = 0;i < btnTab.length; i++){
-        btnTab[i].classList.remove('ative');
-    }
+    // Verifica se o botão já possui a classe 'ative'
+    if (event.currentTarget.classList.contains('ative')) {
+        // Oculta o conteúdo e remove a classe 'ative'
+        document.getElementById(nameTab).style.display = 'none';
+        event.currentTarget.classList.remove('ative');
+    } else {
+        // Oculta todas as abas abertas
+        for (var i = 0; i < conteudoTab.length; i++) {
+            conteudoTab[i].style.display = 'none';
+        }
 
-    //exibir o conteudo quando clicar no botao
-    document.getElementById(nameTab).style.display = 'flex';
-    event.currentTarget.classList.add('ative');
+        // Remove a classe 'ative' de todos os botões
+        for (var i = 0; i < btnTab.length; i++) {
+            btnTab[i].classList.remove('ative');
+        }
+
+        // Exibe o conteúdo e adiciona a classe 'ative' ao botão clicado
+        document.getElementById(nameTab).style.display = 'flex';
+        event.currentTarget.classList.add('ative');
+    }
 }
 
 document.getElementById('first').click();
+
 
 
 

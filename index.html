@@ -39,31 +39,31 @@
     </section>
 
     <section class="imagem" id="img1">
-        <div id="containerTabs">
+        <div id="containerTabs" data-anima="esquerda">
             <h3>Alguns de nossos produtos</h3>
             <nav class="tabs">
+
                 <button data-btnTabs onclick="openTab(event, 'croissant')" id="first">Croissant</button>
+                <article class="conteudoTab" id="croissant">   
+                    <img src="imgs/croissant-P.jpg" alt="croissant" data-anima='esquerda' onclick="janelaIMGs('imgs/croissant-M.jpg', 'Croissant de Frango com cream cheese ')">
+                    <p data-anima='centro'><span class="tituloProduto">Croissant de Frango:</span> massa folhada leve e dourada, recheada com frango desfiado temperado, toque de ervas finas e cream cheese cremoso. Uma combinação perfeita de sabor e textura.</p>
+                    <span class="closeTab" onclick="this.parentElement.style.display = 'none'">X</span>
+                </article>
+
                 <button data-btnTabs onclick="openTab(event, 'cappuccino')">Cappuccino</button>
+                <article class="conteudoTab" id="cappuccino">
+                    <img src="imgs/cappuccino-P.jpg" alt="cappuccino"  onclick="janelaIMGs('imgs/cappuccino-M.jpg', 'Cappuccino')">
+                    <p><span class="tituloProduto">Cappuccino:</span> uma harmoniosa combinação de espresso encorpado, leite vaporizado e uma camada aveludada de espuma, finalizado com um toque de cacau em pó. Clássico, aromático e reconfortante.</p>
+                    <span class="closeTab" onclick="this.parentElement.style.display = 'none'">X</span>
+                </article>
+
                 <button data-btnTabs onclick="openTab(event, 'bolo')">Bolo</button>
+                <article class="conteudoTab" id="bolo">
+                    <img src="imgs/bolo-P.jpg" alt="bolo"   onclick="janelaIMGs('imgs/bolo-M.jpg', 'Bolo de chocolate')">
+                    <p><span class="tituloProduto">Bolo de Chocolate com Calda de Cereja:</span> massa rica e macia de chocolate, coberta com uma generosa calda de cereja levemente doce e azedinha. Uma sobremesa sofisticada que encanta o paladar.</p>
+                    <span class="closeTab" onclick="this.parentElement.style.display = 'none'">X</span>
+                </article>
             </nav>
-
-            <article class="conteudoTab" id="croissant">   
-                <img src="imgs/croissant-P.jpg" alt="croissant" data-anima='esquerda' onclick="janelaIMGs('imgs/croissant-M.jpg', 'Croissant de Frango com cream cheese ')">
-                <p data-anima='centro'><span class="tituloProduto">Croissant de Frango:</span> massa folhada leve e dourada, recheada com frango desfiado temperado, toque de ervas finas e cream cheese cremoso. Uma combinação perfeita de sabor e textura.</p>
-                <span class="closeTab" onclick="this.parentElement.style.display = 'none'">X</span>
-            </article>
-
-            <article class="conteudoTab" id="cappuccino">
-                <img src="imgs/cappuccino-P.jpg" alt="cappuccino"  onclick="janelaIMGs('imgs/cappuccino-M.jpg', 'Cappuccino')">
-                <p><span class="tituloProduto">Cappuccino:</span> uma harmoniosa combinação de espresso encorpado, leite vaporizado e uma camada aveludada de espuma, finalizado com um toque de cacau em pó. Clássico, aromático e reconfortante.</p>
-                <span class="closeTab" onclick="this.parentElement.style.display = 'none'">X</span>
-            </article>
-
-            <article class="conteudoTab" id="bolo">
-                <img src="imgs/bolo-P.jpg" alt="bolo"   onclick="janelaIMGs('imgs/bolo-M.jpg', 'Bolo de chocolate')">
-                <p><span class="tituloProduto">Bolo de Chocolate com Calda de Cereja:</span> massa rica e macia de chocolate, coberta com uma generosa calda de cereja levemente doce e azedinha. Uma sobremesa sofisticada que encanta o paladar.</p>
-                <span class="closeTab" onclick="this.parentElement.style.display = 'none'">X</span>
-            </article>
 
         </div><!--Fim container tabs-->
     </section><!--Fim img1-->
