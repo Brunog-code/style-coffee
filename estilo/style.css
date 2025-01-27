@@ -431,9 +431,6 @@ footer a::after{
 }
 
 
-
-
-
 /*AJUSTES PARA TELA PEQUENA*/
 @media screen and (max-width: 600px){
     .imagem{
