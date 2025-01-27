@@ -16,7 +16,6 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-titulo: "Funnel Display", serif;
     --fonte-destaque:"Sour Gummy", serif;
-    
 }
 
 *{
@@ -431,7 +430,7 @@ footer a::after{
 }
 
 
-/*AJUSTES PARA TELA PEQUENA*/
+/*AJUSTES DE **WIDTH** PARA TELA PEQUENA*/
 @media screen and (max-width: 600px){
     .imagem{
         background-position: left;
@@ -467,9 +466,23 @@ footer a::after{
 
     .conteudoTab img{
         max-height: 194px;
+    }
+}
 
+/*AJUSTES DE **HEIGHT** PARA TELA PEQUENA*/
+@media screen and (max-height: 500px) {
+    #containerTabs {
+        height: auto; 
+        overflow-y: auto; 
     }
 
+    .conteudoTab {
+        font-size: 0.8em;  
+    }
+
+    .tabs button {
+        font-size: 14px;
+    }
 }
 
 
