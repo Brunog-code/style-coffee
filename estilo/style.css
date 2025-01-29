@@ -75,10 +75,23 @@ header > p{
 
 header > p:hover{
     background-image: linear-gradient(to right, var(--cor0), var(--cor2));
-    transition-duration: .4s;
-    cursor: pointer;
+    cursor: context-menu;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.781);
     border-radius: 5px 5px 10px 5px;
+    transition-duration: .4s;
+}
+
+span.slogan{
+    position: absolute;
+    font-size: 2.4vw;
+    cursor: context-menu;
+    background-color: #e28737;
+    color:white;
+    padding: 5px;
+    top:45%;
+    left: 40%;
+    border-radius: 5px 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.61);
 }
 
 nav#menu{
@@ -108,7 +121,7 @@ nav#menu a{
 }
 
 nav#menu a:hover{
-    color:#443222;
+
     background-color: var(--cor2);
     border-radius: 10px;
     box-shadow: 4px 4px 8px #33251a94;
@@ -432,6 +445,11 @@ footer a::after{
 
 /*AJUSTES DE **WIDTH** PARA TELA PEQUENA*/
 @media screen and (max-width: 600px){
+
+    nav#menu a{
+        font-size: 15px; 
+    }
+
     .imagem{
         background-position: left;
     }
@@ -449,13 +467,26 @@ footer a::after{
 
     .conteudoTab img{
         max-height: 194px;
+    }
 
+    #bk-arrow{
+        bottom: 40px;
+        right: 20px;
+    }
+    
+    #arrow{
+        bottom: 40px;
+        right: 20px; 
     }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px){
     #containerTabs{
         width: 90%;
+    }
+
+    nav#menu a{
+        font-size: 18px; 
     }
 
     .conteudoTab{
