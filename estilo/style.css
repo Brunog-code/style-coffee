@@ -470,6 +470,13 @@ footer a::after{
 
 
 /*AJUSTES DE **WIDTH** PARA TELA PEQUENA*/
+
+@media screen and (max-width: 400px){
+    span.slogan{
+        margin-top: 20px;
+    }
+}
+
 @media screen and (max-width: 600px){
 
     span.slogan{
