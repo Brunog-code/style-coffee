@@ -93,7 +93,6 @@ span.slogan{
     left: 40%;
     border-radius: 5px 10px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.61);
-    
 }
 
 nav#menu{
@@ -473,6 +472,10 @@ footer a::after{
 
 /*AJUSTES DE **WIDTH** PARA TELA PEQUENA*/
 @media screen and (max-width: 600px){
+
+    span.slogan{
+        margin-top: 3vh;
+    }
 
     nav#menu a{
         font-size: 15px; 
