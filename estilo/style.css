@@ -120,8 +120,34 @@ nav#menu a{
     transition: all .5s ease;
 }
 
-nav#menu a:hover{
+/*Animacao botao*/
+nav#menu a span{
+    display: inline-block;
+    position: relative;
+    transition: all 0.4s ease;
+}
 
+nav#menu a span:after{
+    content: '\0023F7';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: all 0.5s ease;
+}
+
+nav#menu a:hover span{
+    padding-right: 25px;
+}
+
+nav#menu a:hover span:after{
+    opacity: 1;
+    right: 2px;
+}
+
+/**/
+
+nav#menu a:hover{
     background-color: var(--cor2);
     border-radius: 10px;
     box-shadow: 4px 4px 8px #33251a94;
