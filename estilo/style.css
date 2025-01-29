@@ -82,6 +82,7 @@ header > p:hover{
 }
 
 span.slogan{
+    margin-top: 1vh;
     position: absolute;
     font-size: 2.4vw;
     cursor: context-menu;
@@ -92,6 +93,7 @@ span.slogan{
     left: 40%;
     border-radius: 5px 10px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.61);
+    
 }
 
 nav#menu{
@@ -470,18 +472,7 @@ footer a::after{
 
 
 /*AJUSTES DE **WIDTH** PARA TELA PEQUENA*/
-
-@media screen and (max-width: 400px){
-    span.slogan{
-        margin-top: 20px;
-    }
-}
-
 @media screen and (max-width: 600px){
-
-    span.slogan{
-        margin-top: 10px;
-    }
 
     nav#menu a{
         font-size: 15px; 
@@ -519,9 +510,6 @@ footer a::after{
 
 @media screen and (min-width: 600px) and (max-width: 768px){
 
-    span.slogan{
-        margin-top: 10px;
-    }
     
     #containerTabs{
         width: 90%;
