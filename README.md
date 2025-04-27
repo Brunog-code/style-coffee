@@ -20,4 +20,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Acesse o projeto clicando no link abaixo:
 
-[🌐 **Gerador de Senha**](https://brunog-code.github.io/style-coffee/)
+[🌐 **Style coffee**](https://brunog-code.github.io/style-coffee/)
